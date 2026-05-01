@@ -1,14 +1,14 @@
 'use client';
+'use client';
 import { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import { levels } from '@/data/levels';
+import { levels } from '../../../../data/levels';
 import GameBoard from '../../../../components/GameBoard';
 import BlockPanel from '../../../../components/BlockPanel';
 import AIHint from '../../../../components/AIHint';
 import { useProgress } from '../../../../hooks/useProgress';
 import { useVoice } from '../../../../hooks/useVoice';
 import { Block } from '../../../../lib/types';
-
 export default function PlayPage() {
   const { levelId } = useParams();
   const router = useRouter();
