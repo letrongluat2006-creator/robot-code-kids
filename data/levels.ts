@@ -1,0 +1,14 @@
+import { Level } from '@/lib/types';
+
+export const levels: Level[] = [
+  { id: 1, name: "Bài 1: Đi thẳng đến cờ", description: "Hãy đưa robot đi thẳng đến cờ 🏁", grid: [["#","#","#","#","#","#"],["#",".",".",".",".","#"],["#","S",".",".","E","#"],["#","#","#","#","#","#"]], start: { x: 1, y: 2 }, startDir: "right", starsRequired: 1 },
+  { id: 2, name: "Bài 2: Quay phải một lần", description: "Robot cần quay phải rồi đi thẳng", grid: [["#","#","#","#","#"],["#",".",".","E","#"],["#","S",".",".","#"],["#","#","#","#","#"]], start: { x: 1, y: 2 }, startDir: "right", starsRequired: 1 },
+  { id: 3, name: "Bài 3: Zigzag đơn giản", description: "Quay trái → Đi → Quay phải → Đi", grid: [["#","#","#","#","#","#"],["#",".","E",".",".","#"],["#",".","#",".","S","#"],["#","#","#","#","#","#"]], start: { x: 4, y: 2 }, startDir: "left", starsRequired: 2 },
+  { id: 4, name: "Bài 4: Lặp lại 3 lần", description: "Dùng khối Lặp lại để đi ngắn hơn", grid: [["#","#","#","#","#","#"],["#",".",".",".",".","#"],["#","S",".",".",".","E"],["#","#","#","#","#","#"]], start: { x: 1, y: 2 }, startDir: "right", starsRequired: 2 },
+  { id: 5, name: "Bài 5: Hành lang lặp", description: "Lặp 4 lần để đi qua hành lang dài", grid: [["#","#","#","#","#","#","#"],["#","S",".",".",".",".","E","#"],["#","#","#","#","#","#","#"]], start: { x: 1, y: 1 }, startDir: "right", starsRequired: 2 },
+  { id: 6, name: "Bài 6: U-turn lặp", description: "Dùng lặp để quay đầu và quay lại", grid: [["#","#","#","#","#"],["#","E",".",".","#"],["#",".","#",".","#"],["#","S",".",".","#"],["#","#","#","#","#"]], start: { x: 1, y: 3 }, startDir: "right", starsRequired: 3 },
+  { id: 7, name: "Bài 7: Né tường đầu tiên", description: "Robot sẽ gặp tường → phải né", grid: [["#","#","#","#","#","#"],["#","S",".","#",".","E","#"],["#",".",".","#",".",".","#"],["#","#","#","#","#","#"]], start: { x: 1, y: 1 }, startDir: "right", starsRequired: 2 },
+  { id: 8, name: "Bài 8: Mê cung nhỏ", description: "Kết hợp quay + lặp để tìm đường", grid: [["#","#","#","#","#","#","#"],["#",".","#",".",".",".","E","#"],["#",".","#",".","#",".",".","#"],["#","S",".",".","#","#","#","#"],["#","#","#","#","#","#","#"]], start: { x: 1, y: 3 }, startDir: "right", starsRequired: 3 },
+  { id: 9, name: "Bài 9: Đường dài có bẫy", description: "Phải cẩn thận né tường nhiều lần", grid: [["#","#","#","#","#","#","#","#"],["#","S",".",".","#",".",".","E","#"],["#","#",".","#",".","#",".",".","#"],["#",".",".",".",".",".","#",".","#"],["#","#","#","#","#","#","#","#"]], start: { x: 1, y: 1 }, startDir: "right", starsRequired: 3 },
+  { id: 10, name: "Bài 10: Thử thách cuối", description: "Siêu mê cung - Kết hợp tất cả", grid: [["#","#","#","#","#","#","#","#","#"],["#",".",".","#",".",".",".","E","#"],["#","#",".","#","#",".","#",".","#"],["#","S",".",".",".",".",".",".","#"],["#","#","#","#","#","#","#","#","#"]], start: { x: 1, y: 3 }, startDir: "right", starsRequired: 3 }
+];
